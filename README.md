@@ -1,14 +1,22 @@
 ml-fundamentals
 A collection of machine learning projects built during undergraduate study at Manipal Institute of Technology. Each notebook is self-contained and covers a different concept, from basic regression through to convolutional neural networks.
 Projects
+
 1. Linear Regression
 `Linear_Regression_model.ipynb`
 Implements linear regression from scratch using NumPy. Covers the least squares formulation, gradient descent optimisation, and comparison against scikit-learn's built-in implementation. Includes visualisation of the regression line and residuals.
 `NumPy` `Matplotlib` `scikit-learn`
+
+
+
 2. Perceptron on MNIST
 `perceptron on mnist.ipynb`
 A single-layer perceptron trained on the MNIST handwritten digit dataset. Demonstrates the limitations of a linear classifier on a non-linearly separable problem and motivates the need for deeper architectures.
 `NumPy` `scikit-learn` `Matplotlib`
+
+
+
+
 3. Neural Network for Binary Classification with Custom Backpropagation
 # 2-Class Spiral Dataset Neural Network
 
@@ -60,6 +68,9 @@ sklearn  (imported but unused — standard dependency)
 ## Key Concepts Demonstrated
 
 Forward propagation, sigmoid and tanh activations, binary cross-entropy loss, backpropagation, gradient descent parameter updates, and decision boundary visualisation.
+
+
+
 4. Fashion MNIST Image Classifier
 
 A neural network built with TensorFlow/Keras to classify clothing items from the [Fashion MNIST](https://github.com/zalandoresearch/fashion-mnist) dataset.
@@ -96,10 +107,16 @@ matplotlib
 ## Usage
 
 Run the notebook end-to-end. The model loads Fashion MNIST automatically via `tf.keras.datasets`, normalizes pixel values to `[0, 1]`, trains, evaluates, and visualizes predictions with color-coded confidence charts (blue = correct, red = incorrect).
+
+
+
 5. MNIST Digit Classification with CNN and Early Stopping
 MNIST Digit Classification with CNN and Early Stopping.ipynb
 A two-block convolutional neural network trained on MNIST. The architecture stacks two Conv2D + MaxPooling layers (32 and 64 filters respectively), followed by a dense layer of 64 units and a softmax output over 10 classes (121,930 total parameters). Training uses RMSProp with categorical cross-entropy and early stopping (patience=5, monitoring validation loss), halting at epoch 13 with best weights restored from epoch 8. Achieves 98.95% validation accuracy. Plots training and validation loss and accuracy curves across epochs.
 TensorFlow Keras NumPy Matplotlib
+
+
+
 6. Library Management System
 `librarymanagementsys.ipynb`
 A Python-based library management system covering object-oriented design: classes for books, members, and borrowing records, with search and availability tracking.
